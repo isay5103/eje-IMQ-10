@@ -33,3 +33,27 @@ function dividir(event) {
     var division = valor1 / valor2;   
     resultado.value = division;
 }
+
+const value1 = document.getElementById("value1");
+
+value1.addEventListener("focus", function() {
+  this.removeAttribute("placeholder");
+});
+
+value1.addEventListener("blur", function() {
+  if (this.value === "") {
+    this.setAttribute("placeholder", "0");
+  }
+});
+
+const value2 = document.getElementById("value2");
+
+value2.addEventListener("focus", function() {
+  this.removeAttribute("placeholder");
+});
+
+value2.addEventListener("blur", function() {
+  if (this.value === "") {
+    this.setAttribute("placeholder", "0");
+  }
+});
