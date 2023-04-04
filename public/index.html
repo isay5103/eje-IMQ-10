@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/eje-imq.css">
+    <title>Ejercicio 10 Calculadora básica</title>
+  </head>
+  <body>
+    <header>
+      <nav>
+
+      </nav>
+    </header>
+    <main>
+      <div class="container">
+        <div class="content">      
+          <section class="h1"> 
+            <h1>Calculadora Básica</h1>
+          </section>
+          <form action="" class="" name="form">
+            <div class="values">
+              <label for="num" class="input_l"></label>
+              <input type="text" id="value1" class="v1" placeholder="0">
+              <label for="" class="input_l"></label>
+              <input type="text" id="value2" class="v2" placeholder="0">
+            </div>
+            
+            <div class="resultado">
+              <label for="res" class="input_l">Resultado:</label>
+              <input type="text" id="res" class="resultado__input" name="resultado" placeholder="0.0" readonly>
+            </div>
+
+            <div class="buttons">
+              <button class="boton" onclick="sumar(event)">+</button>
+              <button class="boton2" onclick="restar(event)">-</button>
+            </div>
+
+            <div class="buttons">
+              <button class="boton3" onclick="multiplicar(event)">*</button>
+              <button class="boton4" onclick="dividir(event)">/</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </main>
+    <footer class="footer-eje">
+      <p>&copy; 2023 Isay Montejano Quirino</p>
+    </footer>
+    <script src="js/eje-imq.js"></script>
+  </body>
+</html>
