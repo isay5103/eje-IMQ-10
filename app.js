@@ -11,9 +11,9 @@ app.get("/", (req, res) => {
     res.sendFile("En teoria es el index.html");
 });*/
 
-app.get("*", (req, res) => {
+app.get("*", (reg, res) => {
     /*res.send(`404 | Página no encontrada 40.4.html`);*/
-    res.sendFile(__dirname + `public/not-found-404.html`);
+    res.sendFile(__dirname + `/public/not-found-404.html`);
 });
 
 
